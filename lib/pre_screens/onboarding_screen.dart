@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'package:flutter/painting.dart';
 
 class Onboarding extends StatefulWidget {
   const Onboarding({Key? key}) : super(key: key);
@@ -22,16 +23,12 @@ class _OnboardingState extends State<Onboarding> {
             Positioned(
               top: MediaQuery.of(context).size.height * 0.2,
               bottom: MediaQuery.of(context).size.height * 0.4,
-              right: MediaQuery.of(context).size.width * 0.0125,
-              left: MediaQuery.of(context).size.width * 0.0125,
+              right: MediaQuery.of(context).size.width * 0.00125,
+              left: MediaQuery.of(context).size.width * 0.00125,
               child:
-                // Container(
-                //   color: Colors.black,
-                //   height: MediaQuery.of(context).size.height * 0.7,
-                // ),
               Image.asset("assets/images/destinations.png",
               fit: BoxFit.fill,
-              width: MediaQuery.of(context).size.width * 0.95,
+              width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height * 0.7,
               ),
             ),
@@ -65,13 +62,31 @@ class _OnboardingState extends State<Onboarding> {
               ),),
             Positioned(
               top: MediaQuery.of(context).size.height * 0.6,
+              right: MediaQuery.of(context).size.width * 0.0125,
+              left: MediaQuery.of(context).size.width * 0.0125,
               child: SizedBox(
                 child: Center(
                   child: Column(
-                    children: const[
-                      Center(child: Text("Discover New Places")),
+                    children: [
+                      Text(""),
+                      SizedBox(
+                        width: MediaQuery.of(context).size.width * 0.65,
+                        height: 15.0,
+                        child: const FittedBox(
+                          fit: BoxFit.fill,
+                          child: Text("Discover New Places", style: TextStyle(
+                            color: Color(0xFF3D8F30),
+                            letterSpacing: 4.5,
+                            fontSize: 13,
+
+                            fontWeight: FontWeight.w800,
+                          ),),
+                        ),
+                      ),
                       Text(" "),
-                      Text("Vulputate vitae"),
+                      SizedBox(
+
+                          child: Text("Vulputate vitae")),
                       Text("enim.Vulputate vitae"),
                       Text("vitae"),
                     ],
