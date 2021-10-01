@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:thinkpeople/pre_screens/onboarding_screen.dart';
+import 'package:thinkpeople/pre_screens/register_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,12 +13,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
+      title: 'Frame 13',
       theme: ThemeData(
         primarySwatch: Colors.green,
         platform: TargetPlatform.iOS,
       ),
-      home: const Onboarding(),
+      // home: const Onboarding(),
+
+      home: const Register(),
     );
   }
 }

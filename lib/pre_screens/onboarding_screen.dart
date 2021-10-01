@@ -13,23 +13,22 @@ class Onboarding extends StatefulWidget {
 class _OnboardingState extends State<Onboarding> {
   @override
   Widget build(BuildContext context) {
-    return Material(
-      child: Container(
+    return Scaffold(
+      body: Container(
         color: Colors.white,
         height: MediaQuery.of(context).size.height,
         width: double.infinity,
         child: Stack(
           children: [
-
             Positioned(
               top: MediaQuery.of(context).size.height * 0.2,
               bottom: MediaQuery.of(context).size.height * 0.4,
               right: MediaQuery.of(context).size.width * 0.00125,
               left: MediaQuery.of(context).size.width * 0.00125,
-              child:
-              Image.asset("assets/images/destinations.png",
-              fit: BoxFit.fill,
-              width: MediaQuery.of(context).size.width,
+              child: Image.asset(
+                "assets/images/destinations.png",
+                fit: BoxFit.fill,
+                width: MediaQuery.of(context).size.width,
                 height: MediaQuery.of(context).size.height * 0.7,
               ),
             ),
@@ -46,7 +45,8 @@ class _OnboardingState extends State<Onboarding> {
                     borderRadius: BorderRadius.circular(90.0),
                   ),
                 ),
-              ),),
+              ),
+            ),
             Positioned(
               top: -30.0,
               left: -45.0,
@@ -60,7 +60,8 @@ class _OnboardingState extends State<Onboarding> {
                     borderRadius: BorderRadius.circular(90.0),
                   ),
                 ),
-              ),),
+              ),
+            ),
             Positioned(
               top: MediaQuery.of(context).size.height * 0.6,
               right: MediaQuery.of(context).size.width * 0.0125,
@@ -78,24 +79,25 @@ class _OnboardingState extends State<Onboarding> {
                             height: 15.0,
                             child: const FittedBox(
                               fit: BoxFit.fill,
-                              child: Text("Discover New Places",
+                              child: Text(
+                                "Discover New Places",
                                 style: TextStyle(
-                                color: Color(0xFF3D8F30),
-                                letterSpacing: 4.5,
-                                fontSize: 13,
-
-                                fontWeight: FontWeight.w800,
-                              ),
+                                  color: Color(0xFF3D8F30),
+                                  letterSpacing: 4.5,
+                                  fontSize: 13,
+                                  fontWeight: FontWeight.w800,
+                                ),
                               ),
                             ),
                           ),
                           const Text(" "),
                           SizedBox(
-                            width: MediaQuery.of(context).size.width * 0.4,
+                              width: MediaQuery.of(context).size.width * 0.4,
                               height: 12.0,
                               child: const FittedBox(
                                   fit: BoxFit.fill,
-                                  child: Text("Vulputate vitae",
+                                  child: Text(
+                                    "Vulputate vitae",
                                     style: TextStyle(
                                       color: Color(0xFF3D8F30),
                                       letterSpacing: 5.0,
@@ -103,7 +105,6 @@ class _OnboardingState extends State<Onboarding> {
                                       fontWeight: FontWeight.w400,
                                     ),
                                   ))),
-
                           const SizedBox(
                             height: 8,
                           ),
@@ -112,7 +113,8 @@ class _OnboardingState extends State<Onboarding> {
                               height: 12.0,
                               child: const FittedBox(
                                   fit: BoxFit.fill,
-                                  child: Text("enim.Vulputate",
+                                  child: Text(
+                                    "enim.Vulputate",
                                     style: TextStyle(
                                       color: Color(0xFF3D8F30),
                                       letterSpacing: 5.0,
@@ -123,13 +125,13 @@ class _OnboardingState extends State<Onboarding> {
                           const SizedBox(
                             height: 8,
                           ),
-
                           SizedBox(
                               width: MediaQuery.of(context).size.width * 0.15,
                               height: 12.0,
                               child: const FittedBox(
                                   fit: BoxFit.fill,
-                                  child: Text("vitae",
+                                  child: Text(
+                                    "vitae",
                                     style: TextStyle(
                                       color: Color(0xFF3D8F30),
                                       letterSpacing: 5.0,
@@ -141,7 +143,7 @@ class _OnboardingState extends State<Onboarding> {
                       ),
                       const Spacer(),
                       InkWell(
-                        onTap: (){
+                        onTap: () {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
@@ -153,11 +155,12 @@ class _OnboardingState extends State<Onboarding> {
                         },
                         child: Container(
                           // child: Container(
-                          height: 60,
-                          width: MediaQuery.of(context).size.width*0.85,
+                          height: 55,
+                          width: MediaQuery.of(context).size.width * 0.85,
                           decoration: const BoxDecoration(
                               color: Color(0xFF3D8F30),
-                              borderRadius: BorderRadius.all(Radius.circular(10)),
+                              borderRadius:
+                                  BorderRadius.all(Radius.circular(10)),
                               boxShadow: [
                                 BoxShadow(
                                     color: Color(0xFF9AFE8A),
@@ -193,7 +196,6 @@ class _OnboardingState extends State<Onboarding> {
             ),
           ],
         ),
-        
       ),
     );
   }
