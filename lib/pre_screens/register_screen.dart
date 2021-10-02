@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:thinkpeople/pre_screens/login_screen.dart';
 
@@ -208,14 +209,7 @@ class _RegisterState extends State<Register> {
                     children: [
                       InkWell(
                         onTap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) {
-                                return const SamplePage();
-                              },
-                            ),
-                          );
+                          Navigator.push(context, CupertinoPageRoute(builder: (context) => const SamplePage()));
                         },
                         child: Container(
                           height: 55,
@@ -265,7 +259,7 @@ class _RegisterState extends State<Register> {
                               ),
                           ),
                           TextButton(onPressed: (){
-                            const Login();
+                            Navigator.push(context, CupertinoPageRoute(builder: (context) => const Login()));
                           }, child: const Text(
                             "Sign in",
                             style: TextStyle(

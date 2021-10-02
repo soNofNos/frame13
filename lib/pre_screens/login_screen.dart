@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:thinkpeople/pre_screens/register_screen.dart';
 import 'package:thinkpeople/sample_page.dart';
@@ -290,7 +291,7 @@ class _LoginState extends State<Login> {
                             ),
                           ),
                           TextButton(onPressed: (){
-                            const Register();
+                            Navigator.push(context, CupertinoPageRoute(builder: (context) => const Register()));
                           }, child: const Text(
                             "Sign in",
                             style: TextStyle(
