@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: const Onboarding(),
 
-      home: const Login(),
+      home: const Register(),
     );
   }
 }

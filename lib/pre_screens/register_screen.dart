@@ -58,61 +58,63 @@ class _RegisterState extends State<Register> {
               top: MediaQuery.of(context).size.height * 0.2,
               right: MediaQuery.of(context).size.width * 0.0125,
               left: MediaQuery.of(context).size.width * 0.0125,
-              child: SizedBox(
-                child: Center(
-                  child: Column(
-                    children: [
-                      const Text(""),
-                      const Text(""),
-                      SizedBox(
-                        width: MediaQuery.of(context).size.width * 0.55,
-                        height: 15.0,
-                        child: const FittedBox(
-                          fit: BoxFit.fill,
-                          child: Text(
-                            "Welcome Onboard",
-                            style: TextStyle(
-                              color: Color(0xFF3D8F30),
-                              letterSpacing: 4.5,
-                              fontSize: 13,
-                              fontWeight: FontWeight.w800,
+              child: SingleChildScrollView(
+                child: SizedBox(
+                  child: Center(
+                    child: Column(
+                      children: [
+                        const Text(""),
+                        const Text(""),
+                        SizedBox(
+                          width: MediaQuery.of(context).size.width * 0.55,
+                          height: 15.0,
+                          child: const FittedBox(
+                            fit: BoxFit.fill,
+                            child: Text(
+                              "Welcome Onboard",
+                              style: TextStyle(
+                                color: Color(0xFF3D8F30),
+                                letterSpacing: 4.5,
+                                fontSize: 13,
+                                fontWeight: FontWeight.w800,
+                              ),
                             ),
                           ),
                         ),
-                      ),
-                      const Text(" "),
-                      SizedBox(
-                          width: MediaQuery.of(context).size.width * 0.8,
-                          height: 12.0,
-                          child: const FittedBox(
-                              fit: BoxFit.fill,
-                              child: Text(
-                                "Vulputate vitae enim.Vulputa",
-                                style: TextStyle(
-                                  color: Color(0xFF3D8F30),
-                                  letterSpacing: 5.0,
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              ))),
-                      const SizedBox(
-                        height: 8,
-                      ),
-                      SizedBox(
-                          width: MediaQuery.of(context).size.width * 0.3,
-                          height: 12.0,
-                          child: const FittedBox(
-                              fit: BoxFit.fill,
-                              child: Text(
-                                "vitae enim.",
-                                style: TextStyle(
-                                  color: Color(0xFF3D8F30),
-                                  letterSpacing: 5.0,
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w400,
-                                ),
-                              ))),
-                    ],
+                        const Text(" "),
+                        SizedBox(
+                            width: MediaQuery.of(context).size.width * 0.8,
+                            height: 12.0,
+                            child: const FittedBox(
+                                fit: BoxFit.fill,
+                                child: Text(
+                                  "Vulputate vitae enim.Vulputa",
+                                  style: TextStyle(
+                                    color: Color(0xFF3D8F30),
+                                    letterSpacing: 5.0,
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ))),
+                        const SizedBox(
+                          height: 8,
+                        ),
+                        SizedBox(
+                            width: MediaQuery.of(context).size.width * 0.3,
+                            height: 12.0,
+                            child: const FittedBox(
+                                fit: BoxFit.fill,
+                                child: Text(
+                                  "vitae enim.",
+                                  style: TextStyle(
+                                    color: Color(0xFF3D8F30),
+                                    letterSpacing: 5.0,
+                                    fontSize: 13,
+                                    fontWeight: FontWeight.w400,
+                                  ),
+                                ))),
+                      ],
+                    ),
                   ),
                 ),
               ),
@@ -128,17 +130,20 @@ class _RegisterState extends State<Register> {
                 child: Center(
                   child: Column(
                     children: [
-                      TextField(
-
-                        decoration: InputDecoration(
-                          fillColor: const Color(0xFFB0FEA4),
-                          alignLabelWithHint: true,
-                          filled: true,
-                          border: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(8),
-                          ),
-                          labelText: ' Name',
-                        ),
+                      Container(
+                        color:  const Color(0xFFB0FEA4),
+                        height: 30.0,
+                        // child: TextField(
+                        //   decoration: InputDecoration(
+                        //     fillColor: const Color(0xFFB0FEA4),
+                        //     alignLabelWithHint: true,
+                        //     filled: true,
+                        //     border: OutlineInputBorder(
+                        //     borderRadius: BorderRadius.circular(8),
+                        //     ),
+                        //     labelText: ' Name',
+                        //   ),
+                        // ),
                       ),
                       const Text(""),
                       SizedBox(
