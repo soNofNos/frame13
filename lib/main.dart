@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:thinkpeople/pre_screens/login_screen.dart';
-import 'package:thinkpeople/pre_screens/onboarding_screen.dart';
-import 'package:thinkpeople/pre_screens/register_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,9 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         platform: TargetPlatform.iOS,
       ),
-      // home: const Onboarding(),
-
-      home: const Register(),
+      home: const Login(),
     );
   }
 }
