@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:thinkpeople/pre_screens/register_screen.dart';
+import 'package:thinkpeople/sample_page.dart';
 
 class Login extends StatefulWidget {
   const Login({Key? key}) : super(key: key);
@@ -84,8 +85,145 @@ class _LoginState extends State<Login> {
                 ),
               ),
             ),
+            // Positioned(
+            //   top: MediaQuery.of(context).size.height * 0.6,
+            //   right: MediaQuery.of(context).size.width * 0.0125,
+            //   left: MediaQuery.of(context).size.width * 0.0125,
+            //   bottom: 0.0,
+            //   child: SizedBox(
+            //     child: Center(
+            //       child: Column(
+            //         children: [
+            //           Column(
+            //             children: [
+            //               const Text(""),
+            //               SizedBox(
+            //                 width: MediaQuery.of(context).size.width * 0.65,
+            //                 height: 15.0,
+            //                 child: const FittedBox(
+            //                   fit: BoxFit.fill,
+            //                   child: Text(
+            //                     "Discover New Places",
+            //                     style: TextStyle(
+            //                       color: Color(0xFF3D8F30),
+            //                       letterSpacing: 4.5,
+            //                       fontSize: 13,
+            //                       fontWeight: FontWeight.w800,
+            //                     ),
+            //                   ),
+            //                 ),
+            //               ),
+            //               const Text(" "),
+            //               SizedBox(
+            //                   width: MediaQuery.of(context).size.width * 0.4,
+            //                   height: 12.0,
+            //                   child: const FittedBox(
+            //                       fit: BoxFit.fill,
+            //                       child: Text(
+            //                         "Vulputate vitae",
+            //                         style: TextStyle(
+            //                           color: Color(0xFF3D8F30),
+            //                           letterSpacing: 5.0,
+            //                           fontSize: 13,
+            //                           fontWeight: FontWeight.w400,
+            //                         ),
+            //                       ))),
+            //               const SizedBox(
+            //                 height: 8,
+            //               ),
+            //               SizedBox(
+            //                   width: MediaQuery.of(context).size.width * 0.4,
+            //                   height: 12.0,
+            //                   child: const FittedBox(
+            //                       fit: BoxFit.fill,
+            //                       child: Text(
+            //                         "enim.Vulputate",
+            //                         style: TextStyle(
+            //                           color: Color(0xFF3D8F30),
+            //                           letterSpacing: 5.0,
+            //                           fontSize: 13,
+            //                           fontWeight: FontWeight.w400,
+            //                         ),
+            //                       ))),
+            //               const SizedBox(
+            //                 height: 8,
+            //               ),
+            //               SizedBox(
+            //                   width: MediaQuery.of(context).size.width * 0.15,
+            //                   height: 12.0,
+            //                   child: const FittedBox(
+            //                       fit: BoxFit.fill,
+            //                       child: Text(
+            //                         "vitae",
+            //                         style: TextStyle(
+            //                           color: Color(0xFF3D8F30),
+            //                           letterSpacing: 5.0,
+            //                           fontSize: 13,
+            //                           fontWeight: FontWeight.w400,
+            //                         ),
+            //                       ))),
+            //             ],
+            //           ),
+            //           const Spacer(),
+            //           InkWell(
+            //             onTap: () {
+            //               Navigator.push(
+            //                 context,
+            //                 MaterialPageRoute(
+            //                   builder: (context) {
+            //                     return const Register();
+            //                   },
+            //                 ),
+            //               );
+            //             },
+            //             child: Container(
+            //               // child: Container(
+            //               height: 55,
+            //               width: MediaQuery.of(context).size.width * 0.85,
+            //               decoration: const BoxDecoration(
+            //                   color: Color(0xFF3D8F30),
+            //                   borderRadius:
+            //                   BorderRadius.all(Radius.circular(10)),
+            //                   boxShadow: [
+            //                     BoxShadow(
+            //                         color: Color(0xFF9AFE8A),
+            //                         blurRadius: 10,
+            //                         offset: Offset(10, 10))
+            //                   ]),
+            //
+            //               child: Center(
+            //                 child: SizedBox(
+            //                   width: MediaQuery.of(context).size.width * 0.4,
+            //                   height: 15,
+            //                   child: const FittedBox(
+            //                     fit: BoxFit.fill,
+            //                     child: Text(
+            //                       "GET STARTED",
+            //                       style: TextStyle(
+            //                         color: Colors.white,
+            //                         // fontWeight: FontWeight.bold,
+            //                         fontSize: 13,
+            //                         letterSpacing: 5.0,
+            //                       ),
+            //                     ),
+            //                   ),
+            //                 ),
+            //               ),
+            //             ),
+            //           ),
+            //           const Spacer(),
+            //         ],
+            //       ),
+            //     ),
+            //   ),
+            // ),
+
+
+
+
+
             Positioned(
-              top: MediaQuery.of(context).size.height * 0.6,
+              top: MediaQuery.of(context).size.height * 0.8,
               right: MediaQuery.of(context).size.width * 0.0125,
               left: MediaQuery.of(context).size.width * 0.0125,
               bottom: 0.0,
@@ -93,90 +231,18 @@ class _LoginState extends State<Login> {
                 child: Center(
                   child: Column(
                     children: [
-                      Column(
-                        children: [
-                          const Text(""),
-                          SizedBox(
-                            width: MediaQuery.of(context).size.width * 0.65,
-                            height: 15.0,
-                            child: const FittedBox(
-                              fit: BoxFit.fill,
-                              child: Text(
-                                "Discover New Places",
-                                style: TextStyle(
-                                  color: Color(0xFF3D8F30),
-                                  letterSpacing: 4.5,
-                                  fontSize: 13,
-                                  fontWeight: FontWeight.w800,
-                                ),
-                              ),
-                            ),
-                          ),
-                          const Text(" "),
-                          SizedBox(
-                              width: MediaQuery.of(context).size.width * 0.4,
-                              height: 12.0,
-                              child: const FittedBox(
-                                  fit: BoxFit.fill,
-                                  child: Text(
-                                    "Vulputate vitae",
-                                    style: TextStyle(
-                                      color: Color(0xFF3D8F30),
-                                      letterSpacing: 5.0,
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.w400,
-                                    ),
-                                  ))),
-                          const SizedBox(
-                            height: 8,
-                          ),
-                          SizedBox(
-                              width: MediaQuery.of(context).size.width * 0.4,
-                              height: 12.0,
-                              child: const FittedBox(
-                                  fit: BoxFit.fill,
-                                  child: Text(
-                                    "enim.Vulputate",
-                                    style: TextStyle(
-                                      color: Color(0xFF3D8F30),
-                                      letterSpacing: 5.0,
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.w400,
-                                    ),
-                                  ))),
-                          const SizedBox(
-                            height: 8,
-                          ),
-                          SizedBox(
-                              width: MediaQuery.of(context).size.width * 0.15,
-                              height: 12.0,
-                              child: const FittedBox(
-                                  fit: BoxFit.fill,
-                                  child: Text(
-                                    "vitae",
-                                    style: TextStyle(
-                                      color: Color(0xFF3D8F30),
-                                      letterSpacing: 5.0,
-                                      fontSize: 13,
-                                      fontWeight: FontWeight.w400,
-                                    ),
-                                  ))),
-                        ],
-                      ),
-                      const Spacer(),
                       InkWell(
                         onTap: () {
                           Navigator.push(
                             context,
                             MaterialPageRoute(
                               builder: (context) {
-                                return const Register();
+                                return const SamplePage();
                               },
                             ),
                           );
                         },
                         child: Container(
-                          // child: Container(
                           height: 55,
                           width: MediaQuery.of(context).size.width * 0.85,
                           decoration: const BoxDecoration(
@@ -189,19 +255,19 @@ class _LoginState extends State<Login> {
                                     blurRadius: 10,
                                     offset: Offset(10, 10))
                               ]),
-
                           child: Center(
                             child: SizedBox(
-                              width: MediaQuery.of(context).size.width * 0.4,
+                              width: MediaQuery.of(context).size.width * 0.25,
                               height: 15,
                               child: const FittedBox(
                                 fit: BoxFit.fill,
                                 child: Text(
-                                  "GET STARTED",
+                                  "Log in",
                                   style: TextStyle(
                                     color: Colors.white,
                                     // fontWeight: FontWeight.bold,
                                     fontSize: 13,
+                                    fontWeight: FontWeight.w500,
                                     letterSpacing: 5.0,
                                   ),
                                 ),
@@ -210,12 +276,41 @@ class _LoginState extends State<Login> {
                           ),
                         ),
                       ),
+                      const SizedBox(
+                        height: 3,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          const Spacer(),
+                          const Text("Already have an account?",
+                            style: TextStyle(
+                              color: Colors.black54,
+                              fontSize: 12,
+                            ),
+                          ),
+                          TextButton(onPressed: (){
+                            const Register();
+                          }, child: const Text(
+                            "Sign in",
+                            style: TextStyle(
+                              color: Color(0xFF3D8F30),
+                              fontSize: 12,
+                            ),
+                          ),),
+                          const Spacer(),
+                        ],
+                      ),
                       const Spacer(),
                     ],
                   ),
                 ),
               ),
             ),
+
+
+
+
           ],
         ),
       ),
