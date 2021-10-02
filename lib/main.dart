@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:thinkpeople/pre_screens/login_screen.dart';
+import 'package:thinkpeople/splash.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.green,
         platform: TargetPlatform.iOS,
       ),
-      home: const Login(),
+      home: const Splash(),
     );
   }
 }
