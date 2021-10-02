@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:thinkpeople/pre_screens/login_screen.dart';
 import 'package:thinkpeople/pre_screens/onboarding_screen.dart';
 import 'package:thinkpeople/pre_screens/register_screen.dart';
 
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
       ),
       // home: const Onboarding(),
 
-      home: const Register(),
+      home: const Login(),
     );
   }
 }
